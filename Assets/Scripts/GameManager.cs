@@ -37,6 +37,8 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
+        //AudioManager.instance.PlaySound("ballDrop");
+        
         UIManager.instance.GameOver();
         ScoreManager.instance.StopScore();
         gameOver = true;

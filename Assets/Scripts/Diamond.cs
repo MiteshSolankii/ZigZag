@@ -22,7 +22,7 @@ public class Diamond : MonoBehaviour
         if (other.gameObject.CompareTag("Ball"))
         {
             GameObject part = Instantiate(ballController.particle, other.gameObject.transform.position, Quaternion.identity);
-
+            AudioManager.instance.PlaySound("Diamond");
 
 
             anim.SetTrigger("hit");
