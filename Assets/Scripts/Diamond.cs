@@ -27,7 +27,7 @@ public class Diamond : MonoBehaviour
 
             anim.SetTrigger("hit");
             ScoreManager.instance.score += 5;
-            Destroy(gameObject, 0.8f);
+            Destroy(gameObject, 0.15f);
             Destroy(part, 1f);
         }
     }
